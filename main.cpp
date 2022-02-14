@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QTest::qExec(new Test_math);
+    //QTest::qExec(new Test_math);
     MainWindow w;
     w.show();
 

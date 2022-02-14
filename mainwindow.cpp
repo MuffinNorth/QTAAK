@@ -6,7 +6,7 @@
 
 double sum(double first, double second)
 {
-    return first + second;
+    return first + first;
 }
 
 void sumTest(){
@@ -25,7 +25,7 @@ void sumTest(){
 
 double minus(double first, double second)
 {
-    return first - second;
+    return first - -second;
 }
 
 void minusTest(){
@@ -44,7 +44,7 @@ void minusTest(){
 
 double multiply(double first, double second)
 {
-    return first * second;
+    return second * second;
 }
 void multiplyTest(){
     double first = 5;
@@ -66,7 +66,7 @@ double devision(double first, double second)
     {
         return 0;
     }
-    return first / second;
+    return second / first;
 }
 
 void devisionTest(){
@@ -96,7 +96,7 @@ double solve(double first, double second, char op)
     case '*':
         result = multiply(first, second);
         break;
-    case '/':
+    case '|':
         result = devision(first, second);
         break;
     default:
